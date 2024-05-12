@@ -47,11 +47,11 @@ const messages = ["Make yourself familiar with the equipments by hovering over t
    "Click on foamed S5 beaker after foaming",
    "Press OFF button on the whipping machine",
    "Press on next button",
-   "Pour S1 foam in cylinder and measure volume",
-   "Pour S2 foam in cylinder and measure volume ",
-   "Pour S3 foam in cylinder and measure volume",
-   "Pour S4 foam in cylinder and measure volume",
-   "Pour S5 foam in cylinder and measure volume",
+   "Pour S1 foam in C1 cylinder and measure volume",
+   "Pour S2 foam in C2 cylinder and measure volume ",
+   "Pour S3 foam in C3 cylinder and measure volume",
+   "Pour S4 foam in C4 cylinder and measure volume",
+   "Pour S5 foam in C5 cylinder and measure volume",
    "Press the start button on timer to run it for 60 min and record volume.",
    "Press on the next button",
    "Enter your calculated foaming capacity and stability and press check button",
@@ -109,11 +109,11 @@ const messagesh=["उपकरणों के ऊपर माउस ले ज
    "फोमिंग के बाद फोमयुक्त S5 बीकर पर क्लिक करें",
    "व्हिपिंग मशीन पर ऑफ बटन दबाएं",
    "अगला बटन दबाएँ",
-   "सिलेंडर में S1 फोम डालें और आयतन मापें",
-   "सिलेंडर में S2 फोम डालें और आयतन मापें",
-   "सिलेंडर में S3 फोम डालें और आयतन मापें",
-   "सिलेंडर में S4 फोम डालें और आयतन मापें",
-   "सिलेंडर में S5 फोम डालें और आयतन मापें",
+   "C1 सिलेंडर में S1 फोम डालें और आयतन मापें",
+   "C2 सिलेंडर में S2 फोम डालें और आयतन मापें",
+   "C3 सिलेंडर में S3 फोम डालें और आयतन मापें",
+   "C4 सिलेंडर में S4 फोम डालें और आयतन मापें",
+   "C5 सिलेंडर में S5 फोम डालें और आयतन मापें",
    "इसे 60 मिनट तक चलाने और वॉल्यूम रिकॉर्ड करने के लिए टाइमर पर स्टार्ट बटन दबाएं।",
    "अगला बटन दबाएँ",
    "अपनी गणना की गई फोमिंग क्षमता और स्थिरता दर्ज करें और चेक बटन दबाएं",
@@ -259,7 +259,7 @@ var scont5=document.querySelector(".stopwatchcontainer5")
        spatula.style.transitionDuration="0s"
        spatula2.style.visibility ="hidden"
        spatula2.style.transitionDuration="0s"
-       cylinsol.style.visibility="visible";
+      // cylinsol.style.visibility="visible";
        cylinder.style.visibility="visible";
        
        water1.style.visibility="visible";
@@ -1561,7 +1561,7 @@ function back4(){
                milliseconds5 = 0;
                seconds5=seconds5+30;
                minutes5++;
-               if (seconds5 === 1) {
+               if (seconds5 === 60) {
                    seconds5=0;
                    minutes5++;
                    if (minutes5 === 0) {
