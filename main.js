@@ -303,7 +303,7 @@ var scont5=document.querySelector(".stopwatchcontainer5")
     t4.style.visibility="visible"
     t5.style.visibility="visible"
     mytable.style.visibility="visible";
-
+    scont5.style.visibility="hidden"
     update();
     }
     if(f==49){
@@ -330,7 +330,7 @@ var scont5=document.querySelector(".stopwatchcontainer5")
         update();
         f=50
     }
-    if(f==50){
+    if(f==51){
         backgray.style.visibility="visible"
         end.style.visibility="visible"  
     }
@@ -391,11 +391,11 @@ function on() {
     console.log('f')
     if (f == 0) {
         number.style.visibility = "visible";
+        f += 1;
+        update();
         // f=2;
         // update();
     }
-    f += 1;
-    update();
 }
 function s1() {
     console.log('f')
@@ -404,11 +404,11 @@ function s1() {
 
         setTimeout(function () {
             number.innerHTML = "20gm";
-
+            update();
+            f += 1;
         }, 2000)
     }
-    update();
-    f += 1;
+  
 }
 
 function tare() {       //tare krega machine ko
@@ -451,11 +451,11 @@ function capopen() {
         
         setTimeout(function () {
             capon.style.transform = "translate( 0%,800%)"
-
+            f += 1;
+            update();
         }, 2000)
     }
-    f += 1;
-    update();
+   f==4000;
 }
 
 function pick() {
@@ -495,6 +495,7 @@ function pick() {
             update();
             f = 5;
         }, 6000)
+        f=5000;
     }
     else if (f == 8) {
         spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
@@ -533,6 +534,7 @@ function pick() {
             update();
             f = 9;
         }, 6000)
+        f=9000;
     }
     else if (f == 12) {
         spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
@@ -570,6 +572,7 @@ function pick() {
             update();
             f = 13;
         }, 6000)
+        f=13000;
     }
     else if (f == 16) {
         spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
@@ -607,6 +610,7 @@ function pick() {
             update();
             f = 17;
         }, 6000)
+        f=17000;
     }
     else if (f == 20) {
         spt.style.transform = "translate(18%,-280%)rotate(-30deg)"
@@ -644,7 +648,9 @@ function pick() {
             update();
             f = 21;
         }, 6000)
+        f=21000;
     }
+    
 }
 
 
@@ -653,9 +659,10 @@ function p1() {
     console.log(f)
     if (f == 5) {
         po1.style.transform = "translate(250%,60%)";
+        f += 1;
+        update();
     }
-    f += 1;
-    update();
+   
 }
 function s2() {
     console.log(f)
@@ -664,20 +671,20 @@ function s2() {
 
         setTimeout(function () {
             number.innerHTML = "20gm";
-
+            update();
+             f += 1;
         }, 2000)
     }
-    update();
-    f += 1;
+
 }
 function p2() {
     console.log('f')
     if (f == 9) {
-
         po2.style.transform = "translate(350%,60%)"
+        f += 1;
+        update();
     }
-    f += 1;
-    update();
+   
 }
 function s3() {
     console.log('f')
@@ -686,22 +693,22 @@ function s3() {
 
         setTimeout(function () {
             number.innerHTML = "20gm";
-
+            update();
+            f += 1;
         }, 2000)
     }
-    update();
-    f += 1;
+   
 }
 function p3() {
     console.log('f')
     if (f == 13) {
 
         po3.style.transform = "translate(450%,60%)"
-
+        update();
+        f += 1;
 
     }
-    update();
-    f += 1;
+   
 }
 function s4() {
     console.log('f')
@@ -710,20 +717,20 @@ function s4() {
 
         setTimeout(function () {
             number.innerHTML = "20gm";
-
+            update();
+            f += 1;
         }, 2000)
     }
-    update();
-    f += 1;
+   
 }
 function p4() {
     console.log('f')
     if (f == 17) {
-
         po4.style.transform = "translate(550%,60%)"
-    }
-    f += 1;
+        f += 1;
     update();
+    }
+    
 }
 function s5() {
     console.log('f')
@@ -732,19 +739,20 @@ function s5() {
 
         setTimeout(function () {
             number.innerHTML = "20gm";
+            update();
+            f += 1;
         }, 2000)
     }
-    update();
-    f += 1;
+    
 }
 function p5() {
     console.log('f')
     if (f == 21) {
-
         po5.style.transform = "translate(650%,60%)"
+        f =22;
+        update();
     }
-    f =22;
-    update();
+   
 }
 /***************************************************step2nd********************************/
 
@@ -760,12 +768,12 @@ function w1(){
             
         }, 2000)
         setTimeout(function () {
-
             cysolup.style.visibility = "visible";
             water1.style.transform = "translate(0%,0%) rotate(0deg)"
+            f=23;
+            update();
         }, 3000)
-       f=23;
-       update();
+      f=23000
     }
     else if (f==24){
         water1.style.transform = "translate(120%,-60%) rotate(80deg)"
@@ -781,9 +789,10 @@ function w1(){
 
             cysolup.style.visibility = "visible";
             water1.style.transform = "translate(0%,0%) rotate(0deg)"
+            f=25;
+            update();
         }, 3000)
-       f=25;
-       update();
+      f=25000
     }
     else if (f==26){
         water1.style.transform = "translate(120%,-60%) rotate(80deg)"
@@ -799,9 +808,10 @@ function w1(){
 
             cysolup.style.visibility = "visible";
             water1.style.transform = "translate(0%,0%) rotate(0deg)"
+            f=27;
+            update();
         }, 3000)
-       f=27;
-       update();
+      f=27000
     }
     else if (f==28){
         water1.style.transform = "translate(120%,-60%) rotate(80deg)"
@@ -817,9 +827,10 @@ function w1(){
 
             cysolup.style.visibility = "visible";
             water1.style.transform = "translate(0%,0%) rotate(0deg)"
+            f=29;
+            update();
         }, 3000)
-       f=29;
-       update();
+      f=29000
     }
     else if (f==30){
         water1.style.transform = "translate(120%,-60%) rotate(80deg)"
@@ -832,9 +843,10 @@ function w1(){
         setTimeout(function () {
             cysolup.style.visibility = "visible";
             water1.style.transform = "translate(0%,0%) rotate(0deg)"
+            f=31;
+            update();
         }, 3000)
-       f=31;
-       update();
+      f=31000
     }
    
 }
@@ -860,10 +872,11 @@ function cypour() {
             cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
             cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
             drp0.style.visibility = "hidden";
+            f=24;
+            update();
         }, 4000)
         
-       f=24;
-       update();
+      f=24000;
     }
     else if (f == 25) {
 
@@ -887,10 +900,11 @@ function cypour() {
             cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
             cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
             drp1.style.visibility = "hidden";
+            f=26;
+            update();
         }, 4000)
+       f=26000
        
-        f=26;
-        update();
     }
     else if (f == 27) {
 
@@ -914,10 +928,11 @@ function cypour() {
             cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
             cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
             drp2.style.visibility = "hidden";
+            f=28;
+            update();
         }, 4000)
         
-        f=28;
-        update();
+       f=28000
     }
     else if (f == 29) {
 
@@ -941,10 +956,11 @@ function cypour() {
             cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
             cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
             drp3.style.visibility = "hidden";
+            f=30;
+            update();
         }, 4000)
         
-        f=30;
-        update();
+       f=30000
     }
     else if (f == 31) {
 
@@ -966,10 +982,11 @@ function cypour() {
             cylinup.style.transform = "translate(0%,-0%)rotate(0deg)"
             cysolup.style.transform = "translate(0%,-0%)rotate(0deg)"
             drp4.style.visibility = "hidden";
+            f=32;
+        update();
         }, 4000)
         
-        f=32;
-        update();
+        f=32000
     }
 
  
@@ -985,17 +1002,16 @@ function y1(){
         ye1.style.backgroundColor="Red"
         setTimeout(function(){
             ye1.style.visibility="hidden";
+            f=33;
+            update();
            },1000)
-        f=33;
-        update();
-        
+       
     }
 }
 
 function move1(){
     if(f==33){
-        console.log('f')
-        
+
         b1.style.transform="translate(-116%,0%)"
         setTimeout(function(){
          pipe.style.transform="translate(0%,26%)"
@@ -1021,10 +1037,13 @@ function move1(){
             ye1.style.top="28%"
             yyy.style.top="25%"
             pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=34
+            f=34
         update();
-    }}
+           },4000)
+           f=34000
+    }
+   
+}
     function back1(){
         if(f==34){
             resetStopwatch5();
@@ -1032,6 +1051,7 @@ function move1(){
             f=35
             update();
         }
+    
     }
   
 
@@ -1039,10 +1059,7 @@ function move1(){
     if(f==35){
         b2.style.transform="translate(-228%,0%)"
         setTimeout(function(){
-            ye1.style.top="35%"
-           yyy.style.top="32%"
-            pipe.style.transform="translate(0%,20%) rotate(-3deg)"
-            scont5.style.visibility="visible"
+            pipe.style.transform="translate(0%,26%)"
             startStopwatch5();
            },1000)
            
@@ -1067,10 +1084,12 @@ function move1(){
             ye1.style.top="28%"
             yyy.style.top="25%"
             pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=36
+            f=36
         update();
-    }}
+           },4000)
+           f=36000
+    }
+}
 
     function back2(){
         if(f==36){
@@ -1079,17 +1098,21 @@ function move1(){
             f=37
             update();
         }
+        
     }  
   
   function move3(){
     if(f==37){
         b3.style.transform="translate(-316%,0%)"
         setTimeout(function(){
+            pipe.style.transform="translate(0%,26%)"
+            startStopwatch5();
+           },1000)
+
+        setTimeout(function(){
             ye1.style.top="35%"
             yyy.style.top="32%"
             pipe.style.transform="translate(0%,30%) rotate(-3deg)"
-            scont5.style.visibility="visible"
-            startStopwatch5();
            },1500)
            setTimeout(function(){
             pipe.style.transform="translate(0%,30%) rotate(3deg)"
@@ -1103,10 +1126,12 @@ function move1(){
             ye1.style.top="28%"
             yyy.style.top="25%"
             pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=38
+            f=38
         update();
+           },4000)
+           f=38000  
     }
+    
 }
     function back3(){
         if(f==38){
@@ -1115,6 +1140,7 @@ function move1(){
             f=39
             update();
         }
+        
     }
     
     
@@ -1122,11 +1148,14 @@ function move1(){
     if(f==39){
         b4.style.transform="translate(-429%,0%)"
         setTimeout(function(){
+            pipe.style.transform="translate(0%,26%)"
+            startStopwatch5();
+           },1000)
+
+        setTimeout(function(){
             ye1.style.top="35%"
             yyy.style.top="32%"
             pipe.style.transform="translate(0%,30%) rotate(-3deg)"
-            scont5.style.visibility="visible"
-            startStopwatch5();
            },1500)
            setTimeout(function(){
             pipe.style.transform="translate(0%,30%) rotate(3deg)"
@@ -1140,10 +1169,12 @@ function move1(){
             ye1.style.top="28%"
             yyy.style.top="25%"
             pipe.style.transform="translate(0%,0%) rotate(0deg)"
-           },4000)
-        f=40
+            f=40
         update();
+           },4000)
+           f=40000  
     }
+   
 }
 function back4(){
     if(f==40){
@@ -1152,6 +1183,7 @@ function back4(){
         f=41
         update();
    }
+   
 }
    
   
@@ -1159,11 +1191,14 @@ function back4(){
     if(f==41){
         b5.style.transform="translate(-533%,0%)"
         setTimeout(function(){
+            pipe.style.transform="translate(0%,26%)"
+            startStopwatch5();
+           },1000)
+
+        setTimeout(function(){
             ye1.style.top="35%"
             yyy.style.top="32%"
             pipe.style.transform="translate(0%,30%) rotate(-3deg)"
-            scont5.style.visibility="visible"
-            startStopwatch5();
            },1500)
            setTimeout(function(){
             pipe.style.transform="translate(0%,30%) rotate(3deg)"
@@ -1177,10 +1212,12 @@ function back4(){
             ye1.style.top="28%"
             yyy.style.top="25%"
             pipe.style.transform="translate(0%,0%) rotate(0deg)"
+            f=41
+            update();
            },4000)
-        f=41
-        update();
+           f=41000
     }
+    
 }
   function back5(){
     if(f==41){
@@ -1188,10 +1225,12 @@ function back4(){
         b5foam.style.transform="translate(535%,0%)"
         setTimeout(function(){
             yyy.style.visibility="visible";
+            f=42
+            update();
            },1000)
-        f=42
-        update();
+       
     }
+    
   }
 
   function y2(){
@@ -1201,12 +1240,11 @@ function back4(){
         setTimeout(function(){
             backgray.style.visibility="visible"
             popbutton1.style.visibility="visible";
+            f=43   //  line 990 ...but nhi jaana
+            update();
     })
-
-        f=43   //  line 990 ...but nhi jaana
-        update();
+      
     }
-    
   }
   
 
@@ -1231,7 +1269,9 @@ function back4(){
          f=45  //just neeche
          update(); 
         },3000)
+        f=45000
     }
+    
   }
   function up2(){
     if(f==45){    // S2 se 2nd cylinder me
@@ -1250,7 +1290,9 @@ function back4(){
          f=46  //just neeche
          update();
         },3000)
+        f=46000
     }
+   
   }
   function up3(){
     if(f==46){     //S3 se cylinder me
@@ -1269,7 +1311,9 @@ function back4(){
          f=47      //just neeche
          update();
         },3000)
+        f=47000
     }
+   
   }
 
   function up4(){
@@ -1289,7 +1333,9 @@ function back4(){
          f=48 //just neeche
          update();
         },3000)
+        f=48000
     }
+  
   }
 
  
@@ -1334,8 +1380,10 @@ function back4(){
             c5.style.height="14%"
             update();
             f=49   //go to nxt function
-         },30000)
+         },24000)
+         f=49000
     }
+   
   }
 
 
@@ -1435,17 +1483,17 @@ function back4(){
       k4.innerText="82.69"
       k5.innerText="57.90"
       update();
-      f=50;
+      f=51;
       alert('All inputs are filled!');
     } else {
       alert('Please fill in all required fields.');
     }
   });
 
-  const arrow = document.querySelector(".arrow");              
-   setTimeout(() => {
+//   const arrow = document.querySelector(".arrow");              
+//    setTimeout(() => {
               
-   });
+//    });
      
 
 
@@ -1461,9 +1509,9 @@ function back4(){
            milliseconds++;
            if (milliseconds === 50) {
                milliseconds = 0;
-               seconds=seconds+60;
+               seconds=seconds+30;
                minutes++;
-               if (seconds === 1) {
+               if (seconds === 60) {
                    seconds=0;
                    minutes++;
                    if (minutes === 0) {
@@ -1477,7 +1525,7 @@ function back4(){
            if (sixtymin==0) {
                setTimeout(() => {
                    clearInterval(timer);
-                   document.getElementById("stopwatch").innerText = "00:60:3600:25"
+                   document.getElementById("stopwatch").innerText = "00:60:01:25"
                    stopStopwatch();
                },0);}
        },1);
@@ -1511,7 +1559,7 @@ function back4(){
            milliseconds5++;
            if (milliseconds5 === 50) {
                milliseconds5 = 0;
-               seconds5=seconds5+60;
+               seconds5=seconds5+30;
                minutes5++;
                if (seconds5 === 1) {
                    seconds5=0;
@@ -1527,35 +1575,35 @@ function back4(){
            if (five1==0) {
                setTimeout(() => {
                    clearInterval(timer5);
-                   document.getElementById("stopwatch5").innerText = "00:05:300:25"
+                   document.getElementById("stopwatch5").innerText = "00:05:00:25"
                    stopStopwatch5();
                },0);}
    
             if (five2==0) {
                    setTimeout(() => {
                     clearInterval(timer5);
-                    document.getElementById("stopwatch5").innerText = "00:05:300:25"
+                    document.getElementById("stopwatch5").innerText = "00:05:00:25"
                     stopStopwatch5();
             },0);}
    
             if (five3==0) {
                setTimeout(() => {
                    clearInterval(timer5);
-                   document.getElementById("stopwatch5").innerText = "00:05:300:25"
+                   document.getElementById("stopwatch5").innerText = "00:05:00:25"
                    stopStopwatch5();
             },0);}
    
             if (five4==0) {
                setTimeout(() => {
                    clearInterval(timer5);
-                   document.getElementById("stopwatch5").innerText = "00:05:300:25"
+                   document.getElementById("stopwatch5").innerText = "00:05:00:25"
                    stopStopwatch5();
                },0);}
    
             if (five5==0) {
                    setTimeout(() => {
                        clearInterval(timer5);
-                       document.getElementById("stopwatch5").innerText = "00:05:300:25"
+                       document.getElementById("stopwatch5").innerText = "00:05:00:25"
                        stopStopwatch5();
             },0);}
        },1);

@@ -616,9 +616,7 @@ html,body{
     position: absolute;
     cursor: pointer; 
     background-color: yellow;
-    top:21.1%;
-    
-
+    top:18.1%;
   }
   
 
@@ -1484,8 +1482,8 @@ html,body{
   #submitresult{
     position: absolute;
     visibility:hidden;
-    top:76%; /*67*/
-    left:68%;
+    top:46%; /*67*/
+    left:80%;
     height:5%;
     width:5%;
     background-color: #e9fa2b;
@@ -1556,7 +1554,7 @@ html,body{
   }
 
   .stopwatchcontainer{
-    visibility: hidden;
+    /* visibility: visible; */
     position: absolute;
     left:65%;
     top:53%;
@@ -1565,7 +1563,7 @@ html,body{
     background-color: black;
     border: 3%;
     border-style: solid;
-    visibility: hidden;
+    visibility: hidden; 
     border-radius: 15%;
     border-color: #e7f91a;
   }
