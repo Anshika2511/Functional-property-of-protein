@@ -990,7 +990,10 @@ html,body{
     left: 20.3%;
     position: absolute;
     visibility: visible;
-   
+}
+#onb:active{
+    transform: scale(0.98);
+    box-shadow: 7px 6px 28px 1px rgba(250, 35, 35, 0.24);
 }
 #offb{
     width: 2.15%;
@@ -999,7 +1002,10 @@ html,body{
     left: 28.3%;
     position: absolute;
     visibility: visible;
-   
+}
+#offb:active{
+    transform: scale(0.98);
+    box-shadow: 7px 6px 28px 1px rgba(250, 35, 35, 0.24);
 }
 #tareb{
     width: 2.15%;
@@ -1008,7 +1014,10 @@ html,body{
     left: 24.3%;
     position: absolute;
     visibility: visible;
-    
+}
+#tareb:active{
+    transform: scale(0.98);
+    box-shadow: 7px 6px 28px 1px rgba(250, 35, 35, 0.24);
 }
 #number{
     font-size: 2vw;

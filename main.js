@@ -59,7 +59,7 @@ const messages = ["Make yourself familiar with the equipments by hovering over t
    
 ];
 
-const messagesh=["उपकरणों के ऊपर माउस ले जाकर स्वयं को उनसे परिचित कराएं",
+/*const messagesh=["उपकरणों के ऊपर माउस ले जाकर स्वयं को उनसे परिचित कराएं",
 "अगला बटन दबाएँ।",
    "वजन मशीन पर ऑन बटन दबाएँ",
    "वजन मशीन पर एस एक बीकर रखें।",
@@ -116,16 +116,16 @@ const messagesh=["उपकरणों के ऊपर माउस ले ज
    "इसे साठ मिनट तक चलाने और वॉल्यूम रिकॉर्ड करने के लिए टाइमर पर स्टार्ट बटन दबाएं।",
    "अगला बटन दबाएँ",
    "अपनी गणना की गई फोमिंग क्षमता और स्थिरता दर्ज करें और चेक बटन दबाएं",
-];
+];*/
 
-var hindibtn = document.querySelector("#hindi")
-var engbtn = document.querySelector("#eng")
-var langselector = document.querySelector("#langselector")
+//var hindibtn = document.querySelector("#hindi")
+//var engbtn = document.querySelector("#eng")
+//var langselector = document.querySelector("#langselector")
 var mes1  
   
 var counter=0
 
-var lang
+/*var lang
 function hindi1(){
     console.log(lang)
     lang="hindi"
@@ -167,21 +167,22 @@ function speech1(){
         utterance.volume=1;
         speechSynthesis.speak(utterance);
     },500)
-}
+}*/
 
 
     var inst=document.querySelector("#message")
      inst.innerText=messages[counter]
      function update(){
       console.log(messages[counter].charAt())
-      if(lang=="hindi"){
-          inst.innerText=messagesh[counter]
-      }
-      else if(lang=="eng"){
-          inst.innerText=messages[counter];
-        }
+      inst.innerText=messages[counter];
+    //   if(lang=="hindi"){
+    //     inst.innerText=messagesh[counter]
+    // }
+    // else if(lang=="eng"){
+    //     inst.innerText=messages[counter];
+    //   }
       counter+=1
-      speech1()
+     // speech1()
   }
    
 
