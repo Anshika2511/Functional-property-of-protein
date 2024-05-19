@@ -1389,7 +1389,7 @@ function back4(){
             c5.style.height="14%"
             update();
             f=49   //go to nxt function
-         },22000)
+         },19000)
          f=49000
     }
    
